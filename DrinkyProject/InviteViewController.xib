@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteViewController">
+            <connections>
+                <outlet property="btnCancel" destination="bv7-1a-oFx" id="HSd-Uy-TAc"/>
+                <outlet property="btnNext" destination="eId-YO-4Fp" id="KZc-Hg-G2D"/>
+                <outlet property="dateTimePicker" destination="sz3-Mr-ZIH" id="zfT-ZB-WcL"/>
+                <outlet property="lbTitle" destination="ks2-pa-jQt" id="ALT-KD-ghR"/>
+                <outlet property="searchBar" destination="BC7-69-xlM" id="6r8-iA-4Lx"/>
+                <outlet property="searchBarContact" destination="QZT-7b-jdd" id="may-1m-c8b"/>
+                <outlet property="searchDisplayController" destination="CZn-nP-3W4" id="PPe-7J-fRc"/>
+                <outlet property="segment" destination="4fw-7v-VkU" id="EcY-sj-Dfc"/>
+                <outlet property="tableViewContact" destination="2BL-dZ-k8K" id="4lv-Se-TLY"/>
+                <outlet property="tableViewStore" destination="LDU-y9-Vr0" id="gAI-nd-h3y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewScreen1" destination="Va9-UJ-2Tl" id="HrO-xu-AqW"/>
+                <outlet property="viewScreen2" destination="rde-OT-D6K" id="qNq-FF-Rvm"/>
+                <outlet property="viewScreen3" destination="FZm-By-f9U" id="pCf-kL-Urt"/>
+                <outlet property="viewScreen4" destination="exb-3v-6jI" id="KY9-zV-EhQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4fw-7v-VkU">
+                    <rect key="frame" x="8" y="532" width="304" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                        <segment title="Third"/>
+                        <segment title="Fourth"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentControlChange:" destination="-1" eventType="valueChanged" id="xry-bA-RLu"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5f7-OS-kn8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv7-1a-oFx">
+                            <rect key="frame" x="8" y="27" width="54" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="tapCancle:" destination="-1" eventType="touchUpInside" id="UTp-jz-vfp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eId-YO-4Fp">
+                            <rect key="frame" x="258" y="27" width="54" height="30"/>
+                            <animations/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="tapNext:" destination="-1" eventType="touchUpInside" id="4C6-zG-t7m"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-pa-jQt">
+                            <rect key="frame" x="70" y="31" width="180" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exb-3v-6jI">
+                    <rect key="frame" x="960" y="73" width="320" height="445"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Va9-UJ-2Tl">
+                    <rect key="frame" x="320" y="73" width="320" height="445"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LDU-y9-Vr0">
+                            <rect key="frame" x="0.0" y="44" width="320" height="401"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="NFX-A8-NaC"/>
+                                <outlet property="delegate" destination="-1" id="fhT-4R-8AA"/>
+                            </connections>
+                        </tableView>
+                        <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-69-xlM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <animations/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Fnj-0V-LpN"/>
+                            </connections>
+                        </searchBar>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.78517669440000004" blue="0.52218884139999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZm-By-f9U">
+                    <rect key="frame" x="0.0" y="73" width="320" height="445"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-dZ-k8K">
+                            <rect key="frame" x="0.0" y="44" width="320" height="401"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="x3A-Rz-baR"/>
+                                <outlet property="delegate" destination="-1" id="iI3-p4-Jc0"/>
+                            </connections>
+                        </tableView>
+                        <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZT-7b-jdd">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <animations/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="wZB-fI-dsc"/>
+                            </connections>
+                        </searchBar>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rde-OT-D6K">
+                    <rect key="frame" x="0.0" y="73" width="320" height="445"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="sz3-Mr-ZIH">
+                            <rect key="frame" x="8" y="118" width="304" height="209"/>
+                            <animations/>
+                            <date key="date" timeIntervalSinceReferenceDate="469518053.22719002">
+                                <!--2015-11-18 05:40:53 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="259" y="380"/>
+        </view>
+        <searchDisplayController id="ppS-MA-41y">
+            <connections>
+                <outlet property="delegate" destination="-1" id="UCc-4d-voe"/>
+                <outlet property="searchContentsController" destination="-1" id="s7p-gK-DGg"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="r5z-bf-vhm"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="mu6-Wi-Vmj"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="CZn-nP-3W4">
+            <connections>
+                <outlet property="delegate" destination="-1" id="3Bf-2Q-FTw"/>
+                <outlet property="searchContentsController" destination="-1" id="KGQ-G0-PC9"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="GfU-g9-D9G"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="A5Q-Tk-48z"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

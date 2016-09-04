@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomFriendRequestCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQd-9d-Ts3">
+                        <rect key="frame" x="8" y="10" width="80" height="80"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="rza-1C-4lc"/>
+                            <constraint firstAttribute="height" constant="80" id="zfe-ak-gaA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tran Van Thanh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxB-K0-knd">
+                        <rect key="frame" x="96" y="10" width="216" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="uOu-Qf-R68"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-q8-PSb" customClass="CancelButton">
+                        <rect key="frame" x="209" y="60" width="100" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4wu-6Y-HSN"/>
+                        </constraints>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9J-PD-qyv" customClass="AcceptButton">
+                        <rect key="frame" x="96" y="60" width="100" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="KCT-bl-kf8"/>
+                            <constraint firstAttribute="height" constant="30" id="ybe-tI-Xd0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="lgB-q8-PSb" firstAttribute="top" secondItem="IxB-K0-knd" secondAttribute="bottom" constant="10" id="1NL-Li-OXL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="g9J-PD-qyv" secondAttribute="bottom" constant="1.5" id="3Qc-xY-XUU"/>
+                    <constraint firstItem="lgB-q8-PSb" firstAttribute="leading" secondItem="g9J-PD-qyv" secondAttribute="trailing" constant="13" id="4YT-Ou-YgF"/>
+                    <constraint firstItem="IxB-K0-knd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="APC-32-jpL"/>
+                    <constraint firstItem="g9J-PD-qyv" firstAttribute="leading" secondItem="OQd-9d-Ts3" secondAttribute="trailing" constant="8" id="HgP-Sr-7aV"/>
+                    <constraint firstItem="OQd-9d-Ts3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Nnl-YY-isr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lgB-q8-PSb" secondAttribute="trailing" constant="3" id="WfS-6D-OxB"/>
+                    <constraint firstItem="g9J-PD-qyv" firstAttribute="top" secondItem="IxB-K0-knd" secondAttribute="bottom" constant="10" id="eRp-UO-JRX"/>
+                    <constraint firstItem="IxB-K0-knd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="iGx-e8-Cce"/>
+                    <constraint firstItem="g9J-PD-qyv" firstAttribute="width" secondItem="lgB-q8-PSb" secondAttribute="width" id="pMI-kg-WZ9"/>
+                    <constraint firstItem="IxB-K0-knd" firstAttribute="leading" secondItem="OQd-9d-Ts3" secondAttribute="trailing" constant="8" id="zbG-Vx-Ixr"/>
+                    <constraint firstItem="OQd-9d-Ts3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zrO-0s-Gfq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="3Qc-xY-XUU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="btnAccept" destination="g9J-PD-qyv" id="3op-1O-3Ys"/>
+                <outlet property="btnCancel" destination="lgB-q8-PSb" id="a31-j4-yKH"/>
+                <outlet property="imgAvatar" destination="OQd-9d-Ts3" id="ASU-jX-SNZ"/>
+                <outlet property="lbName" destination="IxB-K0-knd" id="UIR-Wl-FXR"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="243"/>
+        </tableViewCell>
+    </objects>
+</document>

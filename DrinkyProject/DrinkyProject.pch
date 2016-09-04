@@ -1,0 +1,34 @@
+//
+//  DrinkyProject.pch
+//  DrinkyProject
+//
+//  Created by Thanh Tran Van on 12/4/15.
+//  Copyright © 2015 ThanhTV. All rights reserved.
+//
+
+#import <Availability.h>
+#ifndef DrinkyProject_pch
+#define DrinkyProject_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#endif /* DrinkyProject_pch */
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Utilities.h"
+#import "AppDelegate.h"
+#import "LocalizableDefine.h"
+#import "Define.h"
+#import "APIDefine.h"
+#import "DBManager.h"
+#import "APIRequest.h"
+#import <FMDB/FMDB.h>
+#import <AFNetworking/AFNetworking.h>
+
+#endif

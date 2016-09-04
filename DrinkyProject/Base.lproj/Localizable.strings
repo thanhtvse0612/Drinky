@@ -1,0 +1,64 @@
+/* 
+  Localizable.strings
+  DrinkyProject
+
+  Created by Thanh Tran Van on 11/16/15.
+  Copyright © 2015 ThanhTV. All rights reserved.
+*/
+
+// Button Name
+"LoginButtonName" = "Login";
+"ForgotButtonName" = "Forgot Password";
+"RegisterButtonName" = "Register";
+"LbFullname" = "Fullname";
+"LbPhoneNumber" = "Phone Number";
+"LbEmail" = "Email";
+"LbPassword" = "Password";
+"LbAgreeTermCondition" = "I have read and agree to the Terms & Conditions";
+"LbEmailDescription" = "Let me know information of drinky by Email";
+"ButtonCancel" = "Cancel";
+"ButtonNext" = "Next";
+"ButtonAccept" = "Accept";
+"ButtonCancel" = "Cancel";
+"TabStoreNotification" = "Store";
+"TabFriendRequest" = "Friend Request";
+
+// text field place holder
+"PasswordPlaceHolder" = "Password";
+"PhoneNumberPlaceHolder" = "Phone number";
+"FullNamePlaceHolder" = "Your fullname";
+"PasswordRegisterPlaceHolder" = "6 - 20 characters please!";
+"PhoneNumberRegisterPlaceHolder" = "Required";
+"ConfirmPasswordRegisterPlaceHolder" = "Required";
+"EmailPlaceHolder" = "Required";
+"SearchPlaceHolder" = "Search...";
+
+//Screen name
+"FriendRequestScreen" = "Friends";
+"StartInviteScreen" = "New Invite";
+"NotificationScreen" = "Notification";
+"ListInvitationScreen" = "Invitation";
+"ProfileScreen" = "Profile";
+"RegisterScreen" = "Register";
+
+//Invite meeting
+"WhereViewTitle" = "Where";
+"WhoViewTitle" = "Who";
+"WhenViewTitle" = "When";
+"ConfirmViewTitle" = "Confirm";
+"DetailStoreTitle" = "Detail Store";
+
+//Alert
+"OK_Button_Alert" = "OK";
+"AlertConfirmInvitaion_Title" = "Congratulation!";
+"AlertConfirmInvitaion_Message" = "You Have Invite 1 Meeting Sucessfully";
+
+//Label
+"LbPassword" = "Password";
+"LbUsername" = "Username";
+"LbPhoneNumber" = "Phone Number";
+"LbBirthdate" = "Birthdate";
+"LbEmail" = "Email";
+
+//Error Message
+"ErrorMessage_UnselectedGender" = "You have not chosen Gender !!!";
